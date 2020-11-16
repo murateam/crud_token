@@ -36,7 +36,7 @@
 								<p class="mb-2">
 									For example you can use the "cURL":
 								</p>
-								<p class="mb-0">
+								<p class="mb-0 font-weight-light">
 									curl -d "{\"username\":\"username\", \"password\":\"password\"}" -H "Content-Type: application/json" -X POST http://[HOST NAME]/api-token-auth/
 								</p>
 							</div>
@@ -69,9 +69,9 @@
 							<div class="col-md-auto">
 								<p class="font-weight-bold m-0">For these requests you don't need the token</p>
 								<p>For example you can use the "cURL":</p>
-								<p class="">
+								<p class="font-weight-light">
 								curl -H "Content-Type: application/json" -X GET http://[HOST NAME]/api/v1/users/ # to get the list for exist users</p>
-								<p class="mb-0">
+								<p class="mb-0 font-weight-light">
 								curl -d "{\"username\":\"username\", \"password\":\"password\", \"is_active\":true}" -H "Content-Type: application/json" -X POST http://[HOST NAME]/api/v1/users/ # to crate a new user</p>
 							</div>
 						</div>
@@ -85,6 +85,9 @@
 							<div class="col-md-auto">
 								<h5 class="font-weight-normal">/api/v1/users/</h5>
 							</div>
+							<div class="col-md-auto ml-auto">
+								<h6 class="font-weight-cursive">api_v1_users_list</h6>
+							</div>
 						</div>
 					</div>
 					<div class="card card-body list-group-item-success p-2 m-2 mb-2">
@@ -95,6 +98,9 @@
 							<div class="col-md-auto">
 								<h5 class="font-weight-normal">/api/v1/users/</h5>
 							</div>
+							<div class="col-md-auto ml-auto">
+								<h6 class="font-weight-cursive">api_v1_users_create</h6>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -104,10 +110,10 @@
 							<div class="col-md-auto">
 								<p class="font-weight-bold m-0">For these requests you need the token</p>
 								<p>For example you can use the "cURL":</p>
-								<p class="">
-								curl -d "{\"username\":\"username\", \"password\":\"password\", \"is_active\":true}" -H "Content-Type: application/json" -H "Authorization: Token [user token]" -X PUT http://[HOST NAME]/api/v1/users/{id}/ # to change the exist user</p>
-								<p class="mb-0">
-								curl  -H "Content-Type: application/json" -H "Authorization: Token [user token]" -X DELETE http://[HOST NAME]/api/v1/users/{id}/ # to delete the user</p>
+								<p class="font-weight-light">
+								curl -d "{\"username\":\"username\", \"password\":\"password\", \"is_active\":true}" -H "Content-Type: application/json" -H "Authorization: Token [USER TOKEN]" -X PUT http://[HOST NAME]/api/v1/users/{id}/ # to change the exist user</p>
+								<p class="mb-0 font-weight-light">
+								curl  -H "Content-Type: application/json" -H "Authorization: Token [USER TOKEN]" -X DELETE http://[HOST NAME]/api/v1/users/{id}/ # to delete the user</p>
 							</div>
 						</div>
 					</div>
@@ -119,6 +125,9 @@
 							<div class="col-md-auto">
 								<h5 class="font-weight-normal">/api/v1/users/{id}</h5>
 							</div>
+							<div class="col-md-auto ml-auto">
+								<h6 class="font-weight-cursive">api_v1_users_read</h6>
+							</div>
 						</div>
 					</div>
 					<div class="card card-body list-group-item-warning p-2 m-2">
@@ -128,6 +137,9 @@
 							</div>
 							<div class="col-md-auto">
 								<h5 class="font-weight-normal">/api/v1/users/{id}</h5>
+							</div>
+							<div class="col-md-auto ml-auto">
+								<h6 class="font-weight-cursive">api_v1_users_update</h6>
 							</div>
 						</div>
 					</div>
@@ -139,6 +151,9 @@
 							<div class="col-md-auto">
 								<h5 class="font-weight-normal">/api/v1/users/{id}</h5>
 							</div>
+							<div class="col-md-auto ml-auto">
+								<h6 class="font-weight-cursive">api_v1_users_partial_update</h6>
+							</div>
 						</div>
 					</div>
 					<div class="card card-body list-group-item-danger p-2 m-2">
@@ -148,6 +163,9 @@
 							</div>
 							<div class="col-md-auto">
 								<h5 class="font-weight-normal">/api/v1/users/{id}</h5>
+							</div>
+							<div class="col-md-auto ml-auto">
+								<h6 class="font-weight-cursive">api_v1_users_delete</h6>
 							</div>
 						</div>
 					</div>

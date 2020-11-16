@@ -41,9 +41,10 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'rest_framework.authtoken',
-
     'core',
 ]
+
+# For token authentication
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
