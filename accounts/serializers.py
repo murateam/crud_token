@@ -14,7 +14,7 @@ class UserSerializer(serializers.ModelSerializer):
             'last_login',
             'is_superuser',
         )
-        extra_kwargs = {'password': {'write_only': True}}
+        extra_kwargs = {'password': {'write_only': True}} # this setting needs for hide password
 
     def create(self, validated_data):
         password = validated_data.pop('password')
